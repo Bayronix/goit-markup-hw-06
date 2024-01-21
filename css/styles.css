@@ -627,19 +627,20 @@ svg {
 }
 
 .my-button {
-  min-width: 165px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
+  gap: 16px;
+  border-radius: 4px;
   background-color: #4d5ae5;
+  color: #ffffff;
+  min-width: 165px;
+  height: 40px;
+  cursor: pointer;
   border: none;
   border-radius: 4px;
 }
@@ -649,6 +650,7 @@ svg {
   height: 24px;
   order: 2;
   margin-left: 16px;
+  fill: #fff;
 }
 
 /* New-section */
