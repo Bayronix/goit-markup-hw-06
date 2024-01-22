@@ -66,8 +66,23 @@ ul {
   padding-right: 15px;
 }
 
-.header-list {
-  list-style: none;
+@media (min-width: 320px) {
+  .body {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body {
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1158px) {
+  .body {
+    max-width: 1158px;
+  }
 }
 
 .title {
@@ -185,6 +200,11 @@ nav ul {
   margin: 0 auto;
 }
 
+@media (min-resolution: 192dpi) {
+  .element {
+    background-image: url("./img/people-office@2x.jpg");
+  }
+}
 .section_wrap .section-button-wrap {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
