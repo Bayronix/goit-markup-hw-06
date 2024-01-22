@@ -66,23 +66,8 @@ ul {
   padding-right: 15px;
 }
 
-@media (min-width: 320px) {
-  .body {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 768px) {
-  .body {
-    max-width: 1158px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1158px) {
-  .body {
-    max-width: 1158px;
-  }
+.header-list {
+  list-style: none;
 }
 
 .title {
@@ -117,7 +102,11 @@ nav ul {
   display: flex;
   gap: 40px;
 }
-
+.checkbtn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 .nav-link {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -200,11 +189,6 @@ nav ul {
   margin: 0 auto;
 }
 
-@media (min-resolution: 192dpi) {
-  .element {
-    background-image: url("./img/people-office@2x.jpg");
-  }
-}
 .section_wrap .section-button-wrap {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -647,20 +631,19 @@ svg {
 }
 
 .my-button {
+  min-width: 165px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  gap: 16px;
-  border-radius: 4px;
-  background-color: #4d5ae5;
   color: #ffffff;
-  min-width: 165px;
-  height: 40px;
   cursor: pointer;
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
 }
@@ -670,7 +653,6 @@ svg {
   height: 24px;
   order: 2;
   margin-left: 16px;
-  fill: #fff;
 }
 
 /* New-section */
