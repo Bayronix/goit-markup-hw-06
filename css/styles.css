@@ -873,14 +873,12 @@ nav ul {
 }
 
 .new {
-  margin-left: 80px;
   display: flex;
   flex-direction: column;
 }
 
 .custom-paragraph-class {
   margin-bottom: 16px;
-  margin-left: 80px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -903,7 +901,6 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 72px;
   }
   .text-footer {
@@ -924,7 +921,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   .custom-paragraph-class {
     display: block;
