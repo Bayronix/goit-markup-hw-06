@@ -61,7 +61,8 @@ ul {
 
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px 0 15px;
 }
 
@@ -87,13 +88,6 @@ ul {
   list-style: none;
 }
 
-.container-header {
-  display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
-  margin: 0;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 320px;
@@ -114,10 +108,11 @@ ul {
 .header-list {
   list-style: none;
 }
-.div-open-btn .container-header {
+.container-header {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -263,13 +258,12 @@ nav ul {
   top: 0;
   left: 0;
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 9999;
 }
 
 @media (max-width: 320px) {
@@ -279,7 +273,6 @@ nav ul {
   }
 
   .menu-open-btn {
-    display: flex;
   }
 }
 .menu-open-btn {
@@ -674,16 +667,9 @@ nav ul {
   background-color: #404bbf !important;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .container_full {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Example: Center items horizontally */
-    justify-content: flex-start; /* Example: Align items at the start */
-  }
+@media screen and (min-width: 320px) and (max-width: 767px) {
 }
-@media (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 }
 /* Section 4 */
 .portfolio-section {
@@ -777,22 +763,9 @@ nav ul {
   letter-spacing: 0.32px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .my-form {
-    position: relative;
-  }
-  .title-footer {
-    margin: 0 auto;
-    display: flex;
-    width: 264px;
-    padding-bottom: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-  }
+@media screen and (min-width: 320px) and (max-width: 767px) {
 }
-@media (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 }
 /* Footer */
 .container_full {
@@ -900,6 +873,14 @@ nav ul {
 }
 
 .new {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-paragraph-class {
+  margin-bottom: 16px;
+  margin-left: 80px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -907,11 +888,66 @@ nav ul {
   color: #ffffff;
 }
 
-.custom-paragraph-class {
-  margin-bottom: 16px;
-  margin-left: 80px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    padding: 96px 0;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 72px;
+  }
+  .text-footer {
+    padding-right: 0;
+  }
+
+  .title-footer {
+    display: block;
+    text-align: center;
+  }
+  .p-class {
+    display: block;
+    text-align: center;
+  }
+  .new {
+    margin-top: 72px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .custom-paragraph-class {
+    display: block;
+    text-align: center;
+  }
+
+  .my-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 }
 /*  */
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .my-form {
   display: flex;
   gap: 24px;
@@ -937,19 +973,20 @@ nav ul {
 }
 
 .my-button {
-  min-width: 165px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
+  gap: 16px;
+  border-radius: 4px;
   background-color: #4d5ae5;
+  color: #ffffff;
+  min-width: 165px;
+  height: 40px;
+  cursor: pointer;
   border: none;
   border-radius: 4px;
 }
