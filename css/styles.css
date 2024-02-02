@@ -384,8 +384,6 @@ nav ul {
 }
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container-header {
-  }
   .div-open-btn {
     display: none;
   }
@@ -913,9 +911,9 @@ svg {
 /* Footer */
 .container-full {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 24px;
+
+  gap: 72px;
 }
 
 .container_wrapper {
@@ -1092,8 +1090,13 @@ svg {
     padding: 96px 0;
   }
   .container-full {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    row-gap: 72px;
+    column-gap: 24px;
+    padding-left: 108px;
   }
 
   .title-footer {
@@ -1101,7 +1104,6 @@ svg {
   }
   .new {
     padding-left: 0px;
-    gap: 24px;
   }
 }
 
