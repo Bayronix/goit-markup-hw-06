@@ -79,7 +79,6 @@
           </button>
         </div>
       </div>
-      <!-- New header- section -->
       <div class="mob-menu">
         <!-- close-btn -->
         <button type="button" class="menu-close-btn">
@@ -259,7 +258,7 @@
 
       <!-- Section-3 -->
       <section class="section">
-        <div class="container">
+        <div class="div-section-container container">
           <h2 class="header-section">Our Team</h2>
           <ul class="list-item">
             <!-- Mark Guerrero -->
@@ -534,24 +533,21 @@
             <li class="start-apps">
               <div class="div-img">
                 <picture class="picture-cont">
-                  <source
-                    srcset="./images/foto5@2x.jpg"
-                    media="(max-width: 767px)"
-                    width="288"
-                    height="280"
-                  />
-                  <source
-                    srcset="./images/foto5@3x.jpg"
-                    media="(max-width: 1157px)"
-                    width="356"
-                    height="300"
-                  />
-                  <img
-                    src="./images/foto5.jpg"
-                    alt="Banking App"
-                    width="360"
-                    height="420"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/foto5@2x.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/foto5@3x.jpg"
+                      media="(max-width: 1157px)"
+                    />
+                    <source
+                      srcset="./images/foto5.jpg"
+                      media="(min-width: 1158px)"
+                    />
+                    <img src="./images/foto5@1x.jpg" alt="Banking App" />
+                  </picture>
                 </picture>
                 <p class="paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -570,21 +566,16 @@
                   <source
                     srcset="./images/foto6@2x.jpg"
                     media="(max-width: 767px)"
-                    width="288"
-                    height="280"
                   />
                   <source
                     srcset="./images/foto6@3x.jpg"
                     media="(max-width: 1157px)"
-                    width="356"
-                    height="300"
                   />
-                  <img
-                    src="./images/foto6.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                    height="420"
+                  <source
+                    srcset="./images/foto6.jpg"
+                    media="(min-width: 1158px)"
                   />
+                  <img src="./images/foto6@1x.jpg" alt="Taxi Service" />
                 </picture>
                 <p class="paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -603,21 +594,16 @@
                   <source
                     srcset="./images/foto7@2x.jpg"
                     media="(max-width: 767px)"
-                    width="288"
-                    height="280"
                   />
                   <source
                     srcset="./images/foto7@3x.jpg"
                     media="(max-width: 1157px)"
-                    width="356"
-                    height="300"
                   />
-                  <img
-                    src="./images/foto7.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                    height="420"
+                  <source
+                    srcset="./images/foto7.jpg"
+                    media="(min-width: 1157px)"
                   />
+                  <img src="./images/foto7@1x.jpg" alt="Taxi Service" />
                 </picture>
                 <p class="paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -636,21 +622,16 @@
                   <source
                     srcset="./images/foto8@2x.jpg"
                     media="(max-width: 767px)"
-                    width="288"
-                    height="280"
                   />
                   <source
                     srcset="./images/foto8@3x.jpg"
                     media="(max-width: 1157px)"
-                    width="356"
-                    height="300"
                   />
-                  <img
-                    src="./images/foto8.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                    height="420"
+                  <source
+                    srcset="./images/foto8.jpg"
+                    media="(min-width: 1157px)"
                   />
+                  <img src="./images/foto8@1x.jpg" alt="Taxi Service" />
                 </picture>
                 <p class="paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -678,8 +659,12 @@
                     width="356"
                     height="300"
                   />
+                  <source
+                    srcset="./images/foto9.jpg"
+                    media="(min-width: 1157px)"
+                  />
                   <img
-                    src="./images/foto9.jpg"
+                    src="./images/foto9@1x.jpg"
                     alt="Taxi Service"
                     width="360"
                     height="420"
@@ -711,8 +696,12 @@
                     width="356"
                     height="300"
                   />
+                  <source
+                    srcset="./images/foto10.jpg"
+                    media="(min-width: 1157px)"
+                  />
                   <img
-                    src="./images/foto10.jpg"
+                    src="./images/foto10@1x.jpg"
                     alt="Taxi Service"
                     width="360"
                     height="420"
@@ -834,101 +823,101 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="new-section is-open" id="new-modal">
-      <div class="modal">
-        <button class="modal-button" type="button">
-          <svg
-            class="icon-button"
-            tabindex="0"
-            width="8"
-            height="8"
-            viewBox="0 0 8 8"
-          >
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-        <p class="modal-content">
-          Leave your contacts and we will call you back
-        </p>
-        <form class="modal-form">
-          <div class="form-div">
-            <label for="user-name" class="label-style">Name</label>
-            <div class="form-container-input">
-              <input
-                type="text"
-                id="user-name"
-                name="user-name"
-                class="input-style"
-              />
-              <svg class="icon-user" width="18" height="24" tabindex="0">
-                <use href="./images/icons.svg#person-black"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="form-div">
-            <label for="user-tel" class="label-style">Phone</label>
-            <div class="form-container-input">
-              <input
-                type="tel"
-                id="user-tel"
-                name="user-tel"
-                class="input-style"
-              />
-              <svg class="icon-user" width="18" height="24" tabindex="0">
-                <use href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="form-div">
-            <label for="user-email" class="label-style">Email</label>
-            <div class="form-container-input">
-              <input
-                type="email"
-                id="user-email"
-                name="user-email"
-                class="input-style"
-              />
-              <svg class="icon-user" width="18" height="24" tabindex="0">
-                <use href="./images/icons.svg#email-black"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="form-new-div">
-            <label for="user-comment" class="label-style">Comment</label>
-            <textarea
-              id="user-comment"
-              name="user-comment"
-              class="input-textarea"
-              placeholder="Text input"
-            ></textarea>
-          </div>
-
-          <div class="form-lebel-checkbox">
-            <input
-              class="input-title visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
-              value="true"
-            />
-            <label class="input-checkbox-lebel" for="user-privacy">
-              <span class="form-lebel-span span-checked">
-                <svg class="icon-checket" width="10" height="8">
-                  <use href="./images/icons.svg#checkbox-icon"></use>
+      <div class="new-section is-open" id="new-modal">
+        <div class="modal">
+          <button class="modal-button" type="button">
+            <svg
+              class="icon-button"
+              tabindex="0"
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+            >
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <p class="modal-content">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal-form">
+            <div class="form-div">
+              <label for="user-name" class="label-style">Name</label>
+              <div class="form-container-input">
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  class="input-style"
+                />
+                <svg class="icon-user" width="18" height="24" tabindex="0">
+                  <use href="./images/icons.svg#person-black"></use>
                 </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="form-link" href="">Privacy Policy</a>
-            </label>
-          </div>
+              </div>
+            </div>
 
-          <button class="button-bottom" type="button">Send</button>
-        </form>
+            <div class="form-div">
+              <label for="user-tel" class="label-style">Phone</label>
+              <div class="form-container-input">
+                <input
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  class="input-style"
+                />
+                <svg class="icon-user" width="18" height="24" tabindex="0">
+                  <use href="./images/icons.svg#phone-black"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-div">
+              <label for="user-email" class="label-style">Email</label>
+              <div class="form-container-input">
+                <input
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  class="input-style"
+                />
+                <svg class="icon-user" width="18" height="24" tabindex="0">
+                  <use href="./images/icons.svg#email-black"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-new-div">
+              <label for="user-comment" class="label-style">Comment</label>
+              <textarea
+                id="user-comment"
+                name="user-comment"
+                class="input-textarea"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <div class="form-lebel-checkbox">
+              <input
+                class="input-title visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true"
+              />
+              <label class="input-checkbox-lebel" for="user-privacy">
+                <span class="form-lebel-span span-checked">
+                  <svg class="icon-checket" width="10" height="8">
+                    <use href="./images/icons.svg#checkbox-icon"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="form-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+
+            <button class="button-bottom" type="button">Send</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
