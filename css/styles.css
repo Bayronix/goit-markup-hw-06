@@ -471,6 +471,31 @@ nav ul {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1157px) {
+  .section_wrap {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet@1x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section_wrap {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet@2x.jpg);
+    }
+  }
+}
 /* ? */
 .section_wrap .section-button-wrap {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -757,7 +782,9 @@ svg {
 /* phone */
 @media (min-width: 320px) and (max-width: 767px) {
   .list-item {
+    display: flex;
     flex-direction: column;
+    gap: 74px;
   }
   .list-container {
     margin: 0 auto;
@@ -814,11 +841,9 @@ svg {
 .porfolio-position {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
-  margin: 0;
-  padding: 0;
-
-  gap: 48px 24px;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .start-apps {
@@ -1398,7 +1423,16 @@ svg:focus {
 
 /* phone */
 @media (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    width: 288px;
+    height: 623px;
+    flex-shrink: 0;
+  }
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 1157px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
